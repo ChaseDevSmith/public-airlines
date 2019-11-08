@@ -14,7 +14,7 @@ export class PassengerShow extends React.Component {
         fetch(`http://35.232.243.189/api/passengers/${this.props.match.params.id}`)
             .then( response => response.json())
             .then( passenger => this.setState({ passenger: passenger }))
-        fetch(`http://35.232.243.189/api/api/airlines`)
+        fetch(`http://35.232.243.189/api/airlines`)
             .then( response => response.json())
             .then( airlines => this.setState({ airlines: airlines }))
     }
